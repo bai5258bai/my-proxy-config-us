@@ -10,6 +10,8 @@ Clash Verge / Clash Meta / Mihomo 导入下面的订阅链接即可：
 
 https://raw.githubusercontent.com/bai5258bai/my-proxy-config-us/main/clash.yaml
 
+导入后请先点一次「更新订阅」，不要用旧缓存。
+
 ## 节点
 
 ### US-LAX-ISP
@@ -21,8 +23,8 @@ YinNet 美国双 ISP，出口为洛杉矶。
 | 名称 | US-LAX-ISP |
 | 协议 | VLESS + Reality + Vision |
 | 地址 | `216.167.74.215` |
-| 端口 | `443`（备用 `25152`） |
+| 端口 | `443`（备用节点 `US-LAX-ISP-25152` 使用 `25152`） |
 | UUID | `f4e65f0a-47b4-4033-8f90-bfb692b83ce6` |
-| SNI | `www.cloudflare.com` |
+| SNI | `www.microsoft.com` |
 | short-id | `57e267ef74b481da` |
 | 指纹 | chrome |
