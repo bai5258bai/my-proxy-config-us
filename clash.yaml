@@ -48,8 +48,7 @@ dns:
     - '+.android.clients.google.com'
 # ==================================================
 # 节点（VLESS + Reality + Vision）
-# US-LAX-ISP：YinNet 美国双 ISP 新机器（默认）
-# US-LAX：原洛杉矶住宅节点，端口仍通，先保留
+# US-LAX-ISP：YinNet 美国双 ISP，洛杉矶
 # ==================================================
 proxies:
 - name: US-LAX-ISP
@@ -66,20 +65,6 @@ proxies:
     public-key: RSujQT2_Yumc7QXXctvyFbhzifwCqLhWEQvHOmCHywo
     short-id: 57e267ef74b481da
   client-fingerprint: chrome
-- name: US-LAX
-  type: vless
-  server: 64.81.25.96
-  port: 443
-  uuid: 1cbeb21f-cdcf-4d91-a97a-e8f7419d7105
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: SkwbBei-CHexeanm1dVnWueMmmYnXPMoY10XLhkxKRg
-    short-id: b8fe67ee219a5897
-  client-fingerprint: chrome
 # ==================================================
 # 策略组
 # ==================================================
@@ -88,37 +73,31 @@ proxy-groups:
   type: select
   proxies:
     - US-LAX-ISP
-    - US-LAX
     - DIRECT
 - name: 🤖 AI 专用
   type: select
   proxies:
     - US-LAX-ISP
-    - US-LAX
 - name: 🎬 视频媒体
   type: select
   proxies:
     - US-LAX-ISP
-    - US-LAX
     - DIRECT
 - name: 🎵 Spotify
   type: select
   proxies:
     - US-LAX-ISP
-    - US-LAX
     - DIRECT
 - name: 🌍 国外网站
   type: select
   proxies:
     - US-LAX-ISP
-    - US-LAX
     - DIRECT
 - name: 📥 下载服务
   type: select
   proxies:
     - DIRECT
     - US-LAX-ISP
-    - US-LAX
 # ==================================================
 # 规则（优化版）
 # ==================================================
