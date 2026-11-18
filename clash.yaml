@@ -60,7 +60,21 @@ proxies:
   tls: true
   udp: true
   flow: xtls-rprx-vision
-  servername: www.cloudflare.com
+  servername: www.microsoft.com
+  reality-opts:
+    public-key: RSujQT2_Yumc7QXXctvyFbhzifwCqLhWEQvHOmCHywo
+    short-id: 57e267ef74b481da
+  client-fingerprint: chrome
+- name: US-LAX-ISP-25152
+  type: vless
+  server: 216.167.74.215
+  port: 25152
+  uuid: f4e65f0a-47b4-4033-8f90-bfb692b83ce6
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: www.microsoft.com
   reality-opts:
     public-key: RSujQT2_Yumc7QXXctvyFbhzifwCqLhWEQvHOmCHywo
     short-id: 57e267ef74b481da
@@ -73,31 +87,37 @@ proxy-groups:
   type: select
   proxies:
     - US-LAX-ISP
+    - US-LAX-ISP-25152
     - DIRECT
 - name: 🤖 AI 专用
   type: select
   proxies:
     - US-LAX-ISP
+    - US-LAX-ISP-25152
 - name: 🎬 视频媒体
   type: select
   proxies:
     - US-LAX-ISP
+    - US-LAX-ISP-25152
     - DIRECT
 - name: 🎵 Spotify
   type: select
   proxies:
     - US-LAX-ISP
+    - US-LAX-ISP-25152
     - DIRECT
 - name: 🌍 国外网站
   type: select
   proxies:
     - US-LAX-ISP
+    - US-LAX-ISP-25152
     - DIRECT
 - name: 📥 下载服务
   type: select
   proxies:
     - DIRECT
     - US-LAX-ISP
+    - US-LAX-ISP-25152
 # ==================================================
 # 规则（优化版）
 # ==================================================
