@@ -10,7 +10,7 @@ Clash Verge / Clash Meta / Mihomo 导入下面的订阅链接即可：
 
 https://raw.githubusercontent.com/bai5258bai/my-proxy-config-us/main/clash.yaml
 
-导入后请先点一次「更新订阅」，不要用旧缓存。
+导入后请先点一次「更新订阅」，不要用旧缓存。配置里已包含 `support-x25519mlkem768: true`，这是新版 Xray Reality 和 Clash Verge 互通所必需的。指纹请保持 `chrome`。
 
 ## 节点
 

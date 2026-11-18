@@ -64,6 +64,7 @@ proxies:
   reality-opts:
     public-key: RSujQT2_Yumc7QXXctvyFbhzifwCqLhWEQvHOmCHywo
     short-id: 57e267ef74b481da
+    support-x25519mlkem768: true
   client-fingerprint: chrome
 - name: US-LAX-ISP-25152
   type: vless
@@ -78,6 +79,7 @@ proxies:
   reality-opts:
     public-key: RSujQT2_Yumc7QXXctvyFbhzifwCqLhWEQvHOmCHywo
     short-id: 57e267ef74b481da
+    support-x25519mlkem768: true
   client-fingerprint: chrome
 # ==================================================
 # 策略组
